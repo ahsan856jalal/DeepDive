@@ -32,7 +32,7 @@ if not os.path.exists(save_dir):
     os.makedirs(save_dir)
 
 # Load YOLO model
-model = YOLO('/home/ahsanjalal/yolov11/runs/detect/train11/weights/best.pt')
+model = YOLO('best.pt')
 
 # Get list of all PNG images
 image_files = [f for f in os.listdir(image_dir) if f.endswith('.png')]

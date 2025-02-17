@@ -33,13 +33,15 @@ for image_file in image_files:
         if row.empty:
             print(f"Removing file (not in range): {image_file}")
             os.remove(os.path.join(image_dir, image_file))
-            txt_file = os.path.join(image_dir, os.path.splitext(image_file)[0] + ".txt")
+            txt_file = os.path.join(
+                image_dir, os.path.splitext(image_file)[0] + ".txt")
             if os.path.exists(txt_file):
                 os.remove(txt_file)
     else:
         # If the file is not in the OzFishFrame column, remove it
         print(f"Removing file (not found in OzFishFrame): {image_file}")
         os.remove(os.path.join(image_dir, image_file))
-        txt_file = os.path.join(image_dir, os.path.splitext(image_file)[0] + ".txt")
+        txt_file = os.path.join(
+            image_dir, os.path.splitext(image_file)[0] + ".txt")
         if os.path.exists(txt_file):
             os.remove(txt_file)
