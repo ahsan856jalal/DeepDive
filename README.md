@@ -34,6 +34,8 @@ pip install ultralytics
 ```
 ## Download all model files and data folders from Google drive link to data folder
 ```
+mkdir data
+
 cd data
 ```
 [Google Drive link](https://drive.google.com/drive/folders/1J23uHRA1eduPEjRq5i_9Bolgmq_gvY16?usp=drive_link)
